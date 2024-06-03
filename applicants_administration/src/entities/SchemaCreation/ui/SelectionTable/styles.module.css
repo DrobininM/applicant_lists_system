@@ -1,0 +1,13 @@
+.cell {
+    height: 100%;
+    border: none;
+}
+
+.header_cell {
+    text-align: center;
+}
+
+.table {
+    border-collapse: collapse;
+    height: 100%;
+}

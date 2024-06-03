@@ -1,0 +1,93 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": ["application_id", "requirements", "table_cells", "row_count", "column_count"],
+    "properties": {
+        "application_id": {
+            "type": "integer"
+        },
+        "requirements": {
+            "type": "array",
+            "description": "Requirement example: Конкурсная позиция, СНИЛС, ...",
+            "items": {
+                "type": "object",
+                "required": ["requirement_id", "requirement_name"],
+                "properties": {
+                    "requirement_id": {
+                        "type": "integer"
+                    },
+                    "requirement_name": {
+                        "type": "string"
+                    },
+                    "range": {
+                        "type": "object",
+                        "description": "Data index range in a table",
+                        "required": ["start_row_index", "start_column_index", "pivot_content"],
+                        "properties": {
+                            "start_row_index": {
+                                "type": "integer",
+                                "minimum": 0
+                            },
+                            "start_column_index": {
+                                "type": "integer",
+                                "minimum": 0
+                            },
+                            "pivot_content": {
+                                "type": "string",
+                                "description": "First text value in the range"
+                            },
+                            "end_row_index": {
+                                "type": "integer",
+                                "minimum": 0
+                            },
+                            "end_column_index": {
+                                "type": "integer",
+                                "minimum": 0
+                            }
+                        }
+                    },
+                    "is_subject": {
+                        "type": "boolean"
+                    },
+                    "substitution_requirement_id": {
+                        "type": "integer",
+                        "description": "Id of a requirement that can substitute this one. For example: Приоритет и Согласие на зачисление"
+                    },
+                    "is_classification_required": {
+                        "type": "boolean"
+                    },
+                    "classification": {
+                        "type": "string",
+                        "description": "Value to determine if a cell content can be presented as true"
+                    }
+                }
+            },
+            "minItems": 1
+        },
+        "table_cells": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": ["cell_content"],
+                "properties": {
+                    "cell_content": {
+                        "type": "string"
+                    },
+                    "requirement_id": {
+                        "type": "integer",
+                        "description": "To determine what requirement this cell is selected for"
+                    }
+                }
+            }
+        },
+        "row_count": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "column_count": {
+            "type": "integer",
+            "minimum": 0
+        }
+    }
+}
+  

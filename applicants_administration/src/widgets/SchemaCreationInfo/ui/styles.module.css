@@ -1,0 +1,69 @@
+.content_holder {
+    display: flex;
+    gap: 70px;
+}
+
+.column {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.combobox_label {
+    font-size: 17px;
+    margin-left: 2px;
+}
+
+.column_content_holder {
+    width: 100%;
+    max-width: 350px;
+}
+
+.check_btn_holder {
+    margin-left: 4px;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.check_btn {
+    font-size: 15px;
+    font-weight: lighter;
+    border-radius: 5px;
+    background: rgba(255, 137, 0, 0.8);
+    color: #000000;
+    border: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.check_btn:hover {
+    background: rgba(255, 137, 0);
+}
+
+.check_btn:disabled {
+    opacity: 0.6;
+    background: rgba(255, 137, 0, 0.8);
+    cursor: default;
+}
+
+.msg_holder {
+    margin-left: 10px;
+}
+
+.progress_holder {
+    width: 30px;
+}
+
+.success_msg {
+    color: rgba(0, 128, 0, 0.8);
+    font-size: 14px;
+}
+
+.fail_msg {
+    color: rgba(255, 0, 0, 0.8);
+    font-size: 14px;
+}

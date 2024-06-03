@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "d14a5655-6e9a-490f-8ea9-44256d608116",
+		"name": "Applications Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25558808"
+	},
+	"item": [
+		{
+			"name": "Test Last Application",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/applications/last_application?university_id=1178924081&field_of_study_id=341109131&program_id=1023375640&study_mode_id=18704445&competition_type_id=46883309",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"applications",
+						"last_application"
+					],
+					"query": [
+						{
+							"key": "university_id",
+							"value": "1178924081"
+						},
+						{
+							"key": "field_of_study_id",
+							"value": "341109131"
+						},
+						{
+							"key": "program_id",
+							"value": "1023375640"
+						},
+						{
+							"key": "study_mode_id",
+							"value": "18704445"
+						},
+						{
+							"key": "competition_type_id",
+							"value": "46883309"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Field of Study",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/fields_of_study?university_id=1178924081&offset=0&count=90&field_of_study_name=Би",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"fields_of_study"
+					],
+					"query": [
+						{
+							"key": "university_id",
+							"value": "1178924081"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "count",
+							"value": "90"
+						},
+						{
+							"key": "field_of_study_name",
+							"value": "Би"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Program",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/programs?university_id=1178924081&field_of_study_id=1455809486&offset=0&count=90",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"programs"
+					],
+					"query": [
+						{
+							"key": "university_id",
+							"value": "1178924081"
+						},
+						{
+							"key": "field_of_study_id",
+							"value": "1455809486"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "count",
+							"value": "90"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Period",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/enrollment_periods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"enrollment_periods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Study Modes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/study_modes/program_study_modes?university_id=1178924081&field_of_study_id=1455809486&program_id=547543532",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"study_modes",
+						"program_study_modes"
+					],
+					"query": [
+						{
+							"key": "university_id",
+							"value": "1178924081"
+						},
+						{
+							"key": "field_of_study_id",
+							"value": "1455809486"
+						},
+						{
+							"key": "program_id",
+							"value": "547543532"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

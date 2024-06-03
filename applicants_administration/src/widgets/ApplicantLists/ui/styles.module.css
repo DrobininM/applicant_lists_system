@@ -1,0 +1,89 @@
+.content_holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.top_holder {
+    height: 60px;
+    display: flex;
+    width: 100%;
+}
+
+.add_btn_holder {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.add_btn {
+    background-color: #419152;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 250ms;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.add_btn:hover {
+    background-color: #59be6e;
+}
+
+.combobox_section_holder {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.university_holder {
+    width: 200px;
+}
+
+.pagination_holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.list_container {
+    margin-top: 5px;
+}
+
+.progress_holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.placeholder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.search_holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search_input {
+    font-size: 16px;
+    padding: 8px 9px;
+    border: 1px rgba(0, 0, 0, 0.3) solid;
+    border-radius: 4px;
+}

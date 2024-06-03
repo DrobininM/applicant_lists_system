@@ -1,0 +1,9 @@
+.label_holder {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.combobox_holder {
+    min-width: 300px;
+}

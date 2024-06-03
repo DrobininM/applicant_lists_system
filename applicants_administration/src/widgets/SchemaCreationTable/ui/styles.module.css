@@ -1,0 +1,72 @@
+.label {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.incorrect_msg {
+    font-size: 14px;
+    color: rgba(255, 0, 0, 0.8);
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.loading_holder {
+    margin-top: 12px;
+    margin-left: 8px;
+}
+
+.file_section {
+    display: flex;
+    margin-top: 10px;
+}
+
+.save_btn_holder {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+    opacity: 1;
+}
+
+.save_btn {
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #419152;
+    height: 40px;
+    padding: 10px 36px;
+    border: none;
+    transition: background-color 0.2s;
+    opacity: 1;
+}
+
+.save_btn:hover {
+    background-color: #59be6e;
+}
+
+.save_btn:disabled {
+    cursor: default;
+    background-color: rgba(89, 190, 110, 0.5);
+}
+
+.invisible_btn_holder {
+    opacity: 0;
+}
+
+.table_holder {
+    margin-top: 10px;
+}
+
+.modal_holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

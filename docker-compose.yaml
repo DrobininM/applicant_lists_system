@@ -1,0 +1,102 @@
+version: "3"
+
+services:
+  applications_server:
+    container_name: applications_server_container
+    build:
+      context: applications_server
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+    depends_on:
+      - applications_db
+      - mongo
+    environment:
+      - DB_USER=postgres
+      - DB_PASSWORD=12345
+      - DB_NAME=applicants
+      - DB_PORT=5433
+      - DB_POSTGRES_URL=postgresql+psycopg2://postgres:12345@host.docker.internal:5433/applicants
+      - DB_MONGO_URL=mongodb://host.docker.internal:27017/
+      - MONGO_COLLECTION_NAME=application_schemas
+    deploy:
+      replicas: 1
+    restart: unless-stopped
+
+  # applications_ml_server:
+  #   container_name: applications_ml_server_container
+  #   build:
+  #     context: applications_ml_server
+  #   ports:
+  #     - "8080:80"
+  #   expose:
+  #     - "8080"
+  #   deploy:
+  #     replicas: 1
+  #   restart: unless-stopped
+
+  applicants_administration:
+    container_name: applicants_administration_container
+    build:
+      context: applicants_administration
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "3000:80"
+    expose:
+      - "3000"
+    depends_on:
+      - applications_server
+    environment:
+      - REACT_APP_APPLICATIONS_API_URL=http://host.docker.internal:8000
+    deploy:
+      replicas: 1
+    restart: unless-stopped
+
+  applicants_viewer:
+    container_name: applicants_viewer_container
+    build:
+      context: applicants_viewer
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "3030:80"
+    expose:
+      - "3030"
+    depends_on:
+      - applications_server
+    environment:
+      - REACT_APP_API_URL=http://host.docker.internal:8000
+      - REACT_APP_ML_API_URL=http://host.docker.internal:8080
+    deploy:
+      replicas: 1
+    restart: unless-stopped
+
+  applications_db:
+    container_name: postgres_applications_container
+    image: postgres:15-alpine
+    ports:
+      - "5433:5432"
+    expose:
+      - 5433
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=applicants
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d applicants"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+  mongo:
+    container_name: mongo_container
+    image: mongo
+    restart: unless-stopped
+    ports:
+    - 27017:27017

@@ -1,0 +1,35 @@
+.brand_style {
+    transition-duration: 0.2s;
+    color: white;
+}
+
+.content_holder {
+
+}
+
+.description_style {
+    font-size: 14px;
+    color: rgba(238, 238, 238, 0.71);
+    margin-left: 5px;
+    margin-top: -1px;
+}
+
+.navbar_container {
+    height: 50px;
+    flex: 1;
+    margin-left: 250px;
+    margin-right: 250px;
+    display: flex;
+}
+
+.brand_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.brand_container:hover {
+    color: #eeeeee;
+}

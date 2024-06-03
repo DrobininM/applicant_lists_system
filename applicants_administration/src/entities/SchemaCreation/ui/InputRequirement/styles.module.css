@@ -1,0 +1,54 @@
+.content_holder {
+    display: flex;
+}
+
+.check_holder {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.name_with_check_holder {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.input {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 2px 4px;
+    border: 1px rgba(0, 0, 0, 0.4) solid;
+    border-radius: 2px;
+}
+
+.first_column {
+    flex: 1;
+}
+
+.second_column {
+    margin-left: 2px;
+}
+
+.choose_btn_holder_hidden {
+    opacity: 0;
+}
+
+.choose_btn_holder {
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+.choose_btn {
+    padding: 4px 6px;
+    background-color: rgba(255, 128, 0, 0.72);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.choose_btn:hover {
+    background-color: rgba(255, 143, 29, 0.72);
+}

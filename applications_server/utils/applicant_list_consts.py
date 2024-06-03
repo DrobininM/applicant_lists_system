@@ -1,0 +1,21 @@
+FULL_TIME = "Очное обучение"
+PART_TIME = "Заочное обучение"
+FULL_PART_TIME = "Очно-заочное обучение"
+
+BUDGET = "Бюджетный конкурс"
+COMMERCIAL = "Коммерческий конкурс"
+TARGETED = "Целевой конкурс"
+WITHOUT_EXAMS = "БВИ"
+
+FIRST_SPECIAL_RIGHT = "Инвалид I группы"
+SECOND_SPECIAL_RIGHT = "Инвалид II группы"
+THIRD_SPECIAL_RIGHT = "Инвалид с детства"
+FOURTH_SPECIAL_RIGHT = "Ребёнок-сирота"
+
+COMPETITIVE_POSITION = "Конкурсная позиция"
+INSURANCE_NUMBER = "СНИЛС"
+AGREEMENT = "Согласие на зачисление"
+PRIORITY = "Приоритет"
+SUBMITTED_DIPLOMA = "Наличие оригинала аттестата"
+HAS_SPECIAL_RIGHT = "Наличие преимущественного права"
+EXTRA_SCORE = "Сумма баллов за достижения"

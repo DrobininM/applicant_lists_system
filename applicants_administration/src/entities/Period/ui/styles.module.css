@@ -1,0 +1,64 @@
+.content_holder {
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    min-width: 400px;
+    background: #348bff;
+    border-radius: 15px;
+    color: white;
+    max-width: 400px;
+}
+
+.first_column {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    flex: 1;
+}
+
+.second_column {
+    display: flex;
+    align-items: center;
+}
+
+.period_row {
+    display: flex;
+    height: 100%;
+    font-size: 16px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.buttons_holder {
+    display: flex;
+    gap: 6px;
+    margin-right: 1px;
+}
+
+.edit_btn_holder {
+    padding: 6px 5px 4px 7px;
+    border-radius: 5px;
+}
+
+.edit_btn_holder:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.edit_btn {
+    width: 28px;
+    height: 28px;
+}
+
+.remove_holder {
+    font-size: 24px;
+}
+
+.remove_btn_holder {
+    padding: 4px 9px 2px 9px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.remove_btn_holder:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

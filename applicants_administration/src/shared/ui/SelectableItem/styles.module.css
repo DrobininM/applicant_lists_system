@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 170px;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 3px;
+    user-select: none;
+    transition-duration: 0.2s;
+}
+
+.container_selected {
+    background: rgba(16, 116, 252, 0.7);
+    color: #ffffff;
+}
+
+.container:hover {
+    backdrop-filter: invert(3%);
+}

@@ -1,0 +1,80 @@
+.content_holder {
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    background: #348bff;
+    border-radius: 15px;
+    color: white;
+    max-width: 700px;
+}
+
+.first_column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.second_column {
+    display: flex;
+    align-items: center;
+}
+
+.top_row {
+    font-size: 18px;
+    margin-top: 1px;
+    margin-left: 4px;
+}
+
+.middle_row {
+    display: flex;
+    margin-top: 3px;
+    margin-left: 8px;
+    flex-direction: column;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.period_row {
+    margin-top: 6px;
+    font-size: 14px;
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.period_actual {
+    color: #aeff50;
+}
+
+.buttons_holder {
+    display: flex;
+    gap: 6px;
+    margin-right: 1px;
+}
+
+.edit_btn_holder {
+    padding: 6px 5px 4px 7px;
+    border-radius: 5px;
+}
+
+.edit_btn_holder:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.edit_btn {
+    width: 28px;
+    height: 28px;
+}
+
+.remove_holder {
+    font-size: 24px;
+}
+
+.remove_btn_holder {
+    padding: 4px 9px 2px 9px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.remove_btn_holder:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

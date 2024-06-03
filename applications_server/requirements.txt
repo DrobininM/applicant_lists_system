@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+SQLAlchemy
+pydantic
+pandas
+openpyxl
+python-dotenv
+beautifulsoup4
+psycopg2
+python-multipart
+pymongo
+Pathlib
+lxml

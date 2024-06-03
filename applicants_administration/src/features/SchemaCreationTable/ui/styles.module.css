@@ -1,0 +1,53 @@
+.application_table_holder {
+    width: 100%;
+    max-height: 800px;
+    overflow: scroll;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.requirements_table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.requirement_cell {
+    border: 1px rgba(0, 0, 0, 0.3) solid;
+    padding: 3px;
+}
+
+.add_btn {
+    background-color: #419152;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 250ms;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.subjects_section_holder {
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.subjects_label_holder {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.subjects_holder {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 8px;
+    margin-left: 5px;
+}

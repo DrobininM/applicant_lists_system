@@ -1,0 +1,17 @@
+.selected_cell {
+    background: rgba(0, 166, 255, 0.5);
+    border: 1px solid rgba(0, 166, 255, 0.8);
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.46);
+    word-wrap: break-word;
+    max-width: 300px;
+    min-width: 50px;
+    height: 100%;
+    min-height: 30px;
+    text-align: center;
+}

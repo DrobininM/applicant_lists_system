@@ -1,0 +1,10 @@
+tensorflow
+keras
+fastapi
+uvicorn
+pydantic
+Pathlib
+pandas
+category_encoders
+starlette
+openpyxl
